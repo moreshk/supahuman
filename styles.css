@@ -1,0 +1,34 @@
+
+    .ai-symbol {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        margin: 50px auto;
+    }
+
+    .circle {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        position: absolute;
+    }
+
+    .circle-outer {
+        border: 5px solid #3f51b5;
+        animation: rotate 3s linear infinite;
+    }
+
+    .circle-inner {
+        border: 5px solid #f44336;
+        animation: rotate 1.5s linear infinite reverse;
+    }
+
+    @keyframes rotate {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
